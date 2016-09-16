@@ -7,14 +7,14 @@ public class Ball {
     private Color color;
     private double weight;
     Ball(double weight, Color color){
+        if (weight <=0) weight = 1;
         this.weight = weight;
         this.color = color;
     }
-}
-enum Color{
-    RED,
-    BLUE,
-    GREEN,
-    YELLOW,
-    BROWN
+    public double Weight(){
+        return weight;
+    }
+    public Color Color(){
+        return color;
+    }
 }
