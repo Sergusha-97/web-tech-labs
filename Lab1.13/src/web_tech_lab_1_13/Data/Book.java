@@ -21,7 +21,7 @@ public class Book {
         if (!(obj instanceof Book)) return false;
 
         Book b = (Book)obj;
-        return (this.title == b.title && this.author==b.author && this.price==b.price);
+        return (this.title.equals(b.title)&& this.author.equals(b.author) && this.price==b.price);
 
     }
     public int hashCode(){
