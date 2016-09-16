@@ -12,7 +12,14 @@ public class Book {
         if (!(obj instanceof Book)) return false;
 
         Book b = (Book)obj;
-        return (this.title == b.title && this.author==b.author && this.price==b.price && this.edition==b.edition);
+        return (this.title == b.title && this.author==b.author && this.price==b.price);
 
     }
+    public int hashCode(){
+
+        return 10 * title.hashCode() +
+                5 * author.hashCode() +
+                10*price ;
+    }
+}
 }
