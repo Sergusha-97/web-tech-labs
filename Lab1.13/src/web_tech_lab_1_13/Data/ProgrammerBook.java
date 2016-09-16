@@ -12,4 +12,12 @@ public class ProgrammerBook extends Book {
         if (level < 0) level = 0;
         this.level = level;
     }
+    public boolean equals(Object obj){
+        boolean result = super.equals(obj);
+        if (!(obj instanceof ProgrammerBook)) return false;
+
+        ProgrammerBook b = (ProgrammerBook)obj;
+        return (result && this.level==b.level && this.language.equals(b.language));
+
+    }
 }
