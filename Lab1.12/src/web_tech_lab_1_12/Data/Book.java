@@ -3,7 +3,7 @@
 /**
  * Created by Сергей on 16.09.2016.
  */
-public class Book {
+public class Book implements Cloneable{
     private String title;
     private String author;
     private int price;
@@ -33,6 +33,10 @@ public class Book {
     public String toString(){
 
         return "Книга '" + title + " - " + author + " (цена " +  price + ")";
+    }
+    public Book clone() throws CloneNotSupportedException{
+
+        return (Book) super.clone();
     }
 }
 
