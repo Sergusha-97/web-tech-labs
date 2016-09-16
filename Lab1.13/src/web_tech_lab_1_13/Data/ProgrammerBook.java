@@ -24,4 +24,8 @@ public class ProgrammerBook extends Book {
 
         return super.hashCode()*level*language.hashCode();
     }
+    public String toString(){
+
+        return super.toString()+"\n Язык: "+language + " уровень: " + level;
+    }
 }
