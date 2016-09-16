@@ -8,6 +8,15 @@ public class Book {
     private String author;
     private int price;
     private static int edition;
+    static {
+        edition = 1;
+    }
+    Book (String title, String author, int price) {
+        this.title = title;
+        this.author = author;
+        if (price<0) price = 0;
+        this.price = price;
+    }
     public boolean equals(Object obj){
         if (!(obj instanceof Book)) return false;
 
