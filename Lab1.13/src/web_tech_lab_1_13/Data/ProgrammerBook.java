@@ -20,4 +20,8 @@ public class ProgrammerBook extends Book {
         return (result && this.level==b.level && this.language.equals(b.language));
 
     }
+    public int hashCode(){
+
+        return super.hashCode()*level*language.hashCode();
+    }
 }
