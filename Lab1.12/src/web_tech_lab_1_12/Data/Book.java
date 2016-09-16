@@ -22,6 +22,15 @@ public class Book implements Cloneable, Comparable<Book>{
     public int GetIsbn(){
         return isbn;
     }
+    public String GetTitle(){
+        return title;
+    }
+    public String GetAuthor(){
+        return author;
+    }
+    public int GetPrice(){
+        return price;
+    }
     public boolean equals(Object obj){
         if (!(obj instanceof Book)) return false;
 
