@@ -30,5 +30,9 @@ public class Book {
                 5 * author.hashCode() +
                 10*price ;
     }
+    public String toString(){
+
+        return "Книга '" + title + " - " + author + " (цена " +  price + ")";
+    }
 }
-}
+
