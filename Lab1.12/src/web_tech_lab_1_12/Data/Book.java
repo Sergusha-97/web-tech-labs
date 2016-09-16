@@ -8,4 +8,11 @@ public class Book {
     private String author;
     private int price;
     private static int edition;
+    public boolean equals(Object obj){
+        if (!(obj instanceof Book)) return false;
+
+        Book b = (Book)obj;
+        return (this.title == b.title && this.author==b.author && this.price==b.price && this.edition==b.edition);
+
+    }
 }
