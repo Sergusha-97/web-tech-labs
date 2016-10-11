@@ -1,7 +1,7 @@
-﻿package web_tech_lab_1_12.Data;
+package web_tech_lab_1_12.Data;
 
 /**
- * Created by Сергей on 16.09.2016.
+ * Created by Сергей on 11.10.2016.
  */
 public class Book implements Cloneable, Comparable<Book>{
     private String title;
@@ -12,7 +12,7 @@ public class Book implements Cloneable, Comparable<Book>{
     static {
         edition = 1;
     }
-    Book (String title, String author, int price, int isbn) {
+    public Book (String title, String author, int price, int isbn) {
         this.title = title;
         this.author = author;
         if (price<0) price = 0;
@@ -61,4 +61,3 @@ public class Book implements Cloneable, Comparable<Book>{
 
     }
 }
-
