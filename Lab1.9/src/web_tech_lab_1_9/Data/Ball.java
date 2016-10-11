@@ -6,7 +6,7 @@ package web_tech_lab_1_9.Data;
 public class Ball {
     private Color color;
     private double weight;
-    Ball(double weight, Color color){
+    public Ball(double weight, Color color){
         if (weight <=0) weight = 1;
         this.weight = weight;
         this.color = color;
