@@ -7,7 +7,7 @@ public class DataForExpression {
     private double x;
     private double y;
 
-    DataForExpression(double x, double y){
+    public DataForExpression(double x, double y){
         this.x = x;
         this.y = y;
     }
