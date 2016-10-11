@@ -23,14 +23,14 @@ public class SearhingForPrimes {
         else
             return true;
     }
-    public void PrintResult(int[] array){
+    public ArrayList<Integer> PrintResult(int[] array){
         if(IsPrimesInArray(array)) {
             for (int i : numbers)
                 System.out.println(i);
         }
         else
             System.out.println("There are no primes in the array");
-
+        return numbers;
     }
 
 }
