@@ -9,15 +9,15 @@ public class DataForComputingTangent {
     private double a;
     private double b;
     private double h;
-    DataForComputingTangent( double a, double b, double h){
+    public DataForComputingTangent( double a, double b, double h){
         this.a = a;
         this.b = b;
         this.h = h;
     }
     public ArrayList<Double> GetParametrs(){
-        int number = (int)Math.ceil((b-a) / h);
+        int number = (int)Math.ceil((b-a) / h)+1;
         ArrayList<Double> result = new ArrayList<Double>(number);
-        for (double i=a;i<b;i+=h){
+        for (double i=a;i<=b;i+=h){
             result.add(i);
         }
         return result;
