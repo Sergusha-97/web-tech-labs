@@ -23,7 +23,7 @@ public class CheckingAccessoryToTheField {
 
         }
         public boolean Check (DataForChecking coordinates){
-            if (CheckFirstArea(coordinates)&&CheckSecondArea(coordinates))
+            if (CheckFirstArea(coordinates) || CheckSecondArea(coordinates))
                 return true;
             else
                 return false;

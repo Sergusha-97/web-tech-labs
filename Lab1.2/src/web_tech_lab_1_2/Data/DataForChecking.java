@@ -7,7 +7,7 @@ public class DataForChecking {
     private double x;
     private double y;
 
-    DataForChecking(double x, double y){
+    public DataForChecking(double x, double y){
         this.x = x;
         this.y = y;
     }
